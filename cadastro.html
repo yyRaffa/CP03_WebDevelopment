@@ -19,34 +19,34 @@
                 </div>
                 <div class="cadastro-inputs">
                     <div class="input">
-                        <!-- i = 0 -->
+                        <!-- formCampos[0] -->
                         <label for="login">Login</label> 
                         <input class="input-box" id="login" type="text" name="login" placeholder="login@gmail.com">
                     </div>
                     <div class="input">
-                        <!-- i = 1 -->
+                        <!-- formCampos[1] -->
                         <label for="password">Senha</label>
                         <input class="input-box" id="password" type="password" name="password" placeholder="Senha">
                     </div>
                     <div class="input">
-                        <!-- i = 2 -->
+                        <!-- formCampos[2] -->
                         <label for="confirm-password">Confirmar senha</label>
                         <input class="input-box" id="confirm-password" type="password" name="confirm-password"
                             placeholder="Confirmar Senha">
                     </div>
                     <div class="input">
-                        <!-- i = 3 -->
+                        <!-- formCampos[3] -->
                         <label for="nome">Nome</label>
                         <input class="input-box" id="nome" type="text" name="nome" placeholder="Nome" class="required"
                             oninput="firstnameValidate()">
                     </div>
                     <div class="input">
-                        <!-- i = 4 -->
+                        <!-- formCampos[4] -->
                         <label for="endereco">Endereço</label>
                         <input class="input-box" id="endereco" type="text" name="endereco" placeholder="Endereço">
                     </div>
                     <div class="input">
-                        <!-- i = 5 -->
+                        <!-- formCampos[5] -->
                         <label for="cpf">CPF</label>
                         <input class="input-box" id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx.xx">
                     </div>
@@ -65,16 +65,16 @@
                         </fieldset>
                     </div>
                     <div class="input">
-                        <!-- i = 6 -->
+                        
                         <label for="perfil">Perfil</label>
-                        <select class="input-box" id="perfil" name="perfil">
+                        <select id="select-perfil-box" id="perfil" name="perfil">
                             <option value="A">Prata</option>
                             <option value="B">Ouro</option>
                             <option value="C">Diamante</option>
                         </select>
                     </div>
                     <div class="input">
-                        <!-- i = 7 -->
+                        <!-- formCampos[6] -->
                         <label for="voucher">Voucher</label>
                         <input class="input-box" id="voucher" type="text" name="voucher" placeholder="Voucher">
                     </div>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="botao-login">
-                    <button type="submit"><a href="#">Incluir</a></button>
+                    <button type="submit" onclick="textareaMaiuscula()"><a href="#">Incluir</a></button>
                     <button type=""><a href="#">Excluir</a></button>
                 </div>
             </form>

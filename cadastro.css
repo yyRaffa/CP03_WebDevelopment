@@ -166,6 +166,13 @@ body {
     color: white;
 }
 
+#resultado {
+    margin: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
 /* .span-required {
     display: none;
     font-size: 11px;
