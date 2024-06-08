@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>CP03 - Web Development</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formulario">
+            <form id="form" action="#">
+                <div class="form-header">
+                    <div class="titulo">
+                        <h1>Cadastro do Usuário</h1>
+                    </div>
+                </div>
+                <div class="cadastro-inputs">
+                    <div class="input">
+                        <label for="login">Login</label>
+                        <input id="login" type="text" name="login" placeholder="login@gmail.com">
+                    </div>
+                    <div class="input">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Senha">
+                    </div>
+                    <div class="input">
+                        <label for="confirm-password">Confirmar senha</label>
+                        <input id="confirm-password" type="password" name="confirm-password"
+                            placeholder="Confirmar Senha">
+                    </div>
+                    <div class="input">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Nome" class="required"
+                            oninput="firstnameValidate()">
+                    </div>
+                    <div class="input">
+                        <label for="endereco">Endereço</label>
+                        <input id="endereco" type="text" name="endereco" placeholder="Endereço">
+                    </div>
+                    <div class="input">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx.xx">
+                    </div>
+                    <div class="telefone-formulario">
+                        <fieldset class="telefone-fieldset">
+                            <legend class="telefone-titulo">Telefones</legend>
+                            <div class="telefone-inputs">
+                                <div class="input-telefone">
+                                    <input id="telefone" type="tel" name="telefone" placeholder="xxxxx-xxxx">
+                                </div>
+                                <div class="botao-telefone">
+                                    <button type=""><a href="#">Excluir</a></button>
+                                    <button type=""><a href="#">Adicionar</a></button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="input">
+                        <label for="perfil">Perfil</label>
+                        <select id="perfil" name="perfil">
+                            <option value="A">Prata</option>
+                            <option value="B">Ouro</option>
+                            <option value="C">Diamante</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="voucher">Voucher</label>
+                        <input id="voucher" type="text" name="voucher" placeholder="Voucher">
+                    </div>
+                    <div class="input">
+                        <label for="cpf">Observações</label><br>
+                        <textarea name="observacao" rows="10" cols="60"></textarea>
+                    </div>
+                </div>
+                <div class="botao-login">
+                    <button type="submit"><a href="#">Incluir</a></button>
+                    <button type=""><a href="#">Excluir</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
