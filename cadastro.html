@@ -21,34 +21,38 @@
                     <div class="input">
                         <!-- formCampos[0] -->
                         <label for="login">Login</label> 
-                        <input class="input-box" id="login" type="text" name="login" placeholder="login@gmail.com">
+                        <input class="input-box" id="login" type="text" name="login" placeholder="login@gmail.com" oninput="validarLogin()">
+                        <span class="span-required">O login deve ser um email válido.</span>
                     </div>
                     <div class="input">
                         <!-- formCampos[1] -->
                         <label for="password">Senha</label>
-                        <input class="input-box" id="password" type="password" name="password" placeholder="Senha">
+                        <input class="input-box" id="password" type="password" name="password" placeholder="Senha" oninput="validarSenha()">
+                        <span class="span-required">Senha deve ter no mínimo 8 caracteres.</span>
                     </div>
                     <div class="input">
                         <!-- formCampos[2] -->
                         <label for="confirm-password">Confirmar senha</label>
-                        <input class="input-box" id="confirm-password" type="password" name="confirm-password"
-                            placeholder="Confirmar Senha">
+                        <input class="input-box" id="confirm-password" type="password" name="confirm-password" placeholder="Confirmar Senha" oninput="validarConfirmarSenha()">
+                        <span class="span-required">As senhas devem ser iguais.</span>
                     </div>
                     <div class="input">
                         <!-- formCampos[3] -->
                         <label for="nome">Nome</label>
-                        <input class="input-box" id="nome" type="text" name="nome" placeholder="Nome" class="required"
-                            oninput="firstnameValidate()">
+                        <input class="input-box" id="nome" type="text" name="nome" placeholder="Nome" class="required" oninput="validarNome()">
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
                     </div>
                     <div class="input">
                         <!-- formCampos[4] -->
                         <label for="endereco">Endereço</label>
-                        <input class="input-box" id="endereco" type="text" name="endereco" placeholder="Endereço">
+                        <input class="input-box" id="endereco" type="text" name="endereco" placeholder="Endereço" oninput="validarEndereco()">
+                        <span class="span-required">Digite um endereço válido.</span>
                     </div>
                     <div class="input">
                         <!-- formCampos[5] -->
                         <label for="cpf">CPF</label>
-                        <input class="input-box" id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx.xx">
+                        <input class="input-box" id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx.xx" oninput="validarCPF()">
+                        <span class="span-required">Digite um CPF válido.</span>
                     </div>
                     <div class="telefone-formulario">
                         <fieldset class="telefone-fieldset">
@@ -76,7 +80,8 @@
                     <div class="input">
                         <!-- formCampos[6] -->
                         <label for="voucher">Voucher</label>
-                        <input class="input-box" id="voucher" type="text" name="voucher" placeholder="Voucher">
+                        <input class="input-box" id="voucher" type="text" name="voucher" placeholder="Voucher" oninput="validarVoucher()">
+                        <span class="span-required">Digite um Voucher válido.</span>
                     </div>
                     <div class="input">
                         <label for="cpf">Observações</label><br>
@@ -84,7 +89,7 @@
                     </div>
                 </div>
                 <div class="botao-login">
-                    <button type="submit" onclick="textareaMaiuscula()"><a href="#">Incluir</a></button>
+                    <button type="submit"><a href="#">Incluir</a></button>
                     <button type=""><a href="#">Excluir</a></button>
                 </div>
             </form>
