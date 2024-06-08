@@ -23,6 +23,7 @@ body {
     background-color: white;
     padding: 3rem;
     margin: 5rem 0;
+    border-radius: 15px;
 }
 
 .form-header {
@@ -44,7 +45,7 @@ body {
 .botao-login {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
     padding-top: 1rem;
 }
 
@@ -74,6 +75,7 @@ body {
     padding: 1rem 0;
 }
 
+.input-telefone,
 .input {
     display: flex;
     flex-direction: column;
@@ -88,6 +90,7 @@ body {
     box-shadow: 1px 1px 6px #0000001c;
 }
 
+.input-telefone input,
 .input input {
     margin: 0.6rem 0;
     padding: 0.8rem 1rem;
@@ -96,14 +99,17 @@ body {
     box-shadow: 1px 1px 6px #0000001c;
 }
 
+.input-telefone input:hover,
 .input input:hover {
     background-color: #eeeeee75;
 }
 
+.input-telefone input:focus-visible,
 .input input:focus-visible {
     outline: 1px solid #000b5e;
 }
 
+.input-telefone input::placeholder,
 .input input::placeholder {
     color: #000000be;
 }
@@ -116,42 +122,29 @@ body {
 
 .telefone-titulo {
     margin-left: 1rem;
+    padding: 0 0.25rem;
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
 }
 
 .telefone-fieldset {
-    padding: 1rem 0;
+    padding: 1rem;
     margin: 2rem 0;
+    border-radius: 15px;
 }
 
 .telefone-inputs {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 0.62rem;
     padding: 0 0.5rem;
-}
-
-.input-telefone {
-    display: flex;
-    align-items: center;
-}
-
-.input-telefone input {
-    margin-right: 0.35rem;
-}
-
-.input-telefone label {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #000000c0;
 }
 
 .botao-telefone {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 .botao-telefone button {
