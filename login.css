@@ -15,13 +15,13 @@ body {
 }
 
 .formulario {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: white;
-    padding: 3rem
+    padding: 3rem;
+    margin-top: 12rem;
 }
 
 .form-header {
@@ -42,7 +42,7 @@ body {
 
 .botao-login {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -65,7 +65,7 @@ body {
     color: white;
 }
 
-.cadastro-inputs {
+.login-inputs {
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -112,128 +112,9 @@ body {
     color: #000000c0;
 }
 
-.telefone-titulo {
-    margin-left: 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.telefone-fieldset {
-    padding: 1rem 0;
-    margin: 2rem 0;
-}
-
-.telefone-inputs {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 0.5rem;
-}
-
-.input-telefone {
-    display: flex;
-    align-items: center;
-}
-
-.input-telefone input {
-    margin-right: 0.35rem;
-}
-
-.input-telefone label {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.botao-telefone {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.botao-telefone button {
-    border: none;
-    border-radius: 5px;
-    background-color: #000b5e;
-    padding: 0.4rem 1rem;
-    cursor: pointer;
-    transition: background-color .3s ease;
-}
-
-.botao-telefone button:hover {
-    background-color: #4954a3;
-}
-
-.botao-telefone button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: white;
-}
-
-/* .botao-continue button {
-    width: 100%;
-    margin-top: 2.5rem;
-    border: none;
-    background-color: #000b5e;
-    padding: 0.62rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color .3s ease;
-}
-
-.botao-continue button:hover {
-    background-color: #4954a3;
-}
-
-.botao-continue button a {
-    text-decoration: none;
-    font-size: 0.92rem;
-    font-weight: 500;
-    color: white;
-} */
-
-.span-required {
+/* .span-required {
     display: none;
     font-size: 11px;
     margin: 0 0 0 2px;
     color: #e63636;
-}
-
-@media screen and (max-width: 1330px) {
-    .imagem {
-        display: none;
-    }
-
-    .container {
-        width: 50%;
-    }
-
-    .formulario {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
-
-    .cadastro-inputs {
-        flex-direction: column;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right: 5rem;
-    }
-
-    .telefone-formulario {
-        margin-top: 2rem;
-    }
-
-    .telefone-inputs {
-        flex-direction: column;
-        margin-top: 0.5rem;
-    }
-}
+} */
