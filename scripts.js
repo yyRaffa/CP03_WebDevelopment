@@ -1,10 +1,7 @@
-const form = document.getElementById('form');
-
 const formCampos = document.querySelectorAll('.input-box');
 const spans = document.querySelectorAll('.span-required');
 
 const formTel = document.getElementById('telefone-inputs');
-const telCampos = document.querySelectorAll('.input-telefone-box');
 const adicionarTelBotao = document.getElementById('adicionar-telefone');
 const excluirTelBotao = document.getElementById('excluir-telefone');
 
@@ -106,13 +103,16 @@ function adicionarTel() {
         contadorTel++;
         const inputTelefoneBox = document.createElement('div');
         inputTelefoneBox.classList.add('input-telefone');
-        inputTelefoneBox.innerHTML = '<input class="input-telefone-box" id="telefone" type="tel" name="telefone" placeholder="xxxxx-xxxx">';
+        inputTelefoneBox.innerHTML = `<input class="input-telefone-box" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" oninput="validarTelefone${contadorTel}()">`;
         formTel.insertBefore(inputTelefoneBox, adicionarTelBotao);
     }
 }
-
 function excluirTel() {
-
+    if(contadorTel > minTel) {
+        const inputTelefoneBox = formTel.getElementsByClassName('input-telefone');
+        inputTelefoneBox[inputTelefoneBox.length - 1].remove();
+        contadorTel--;
+    }
 }
 
 
